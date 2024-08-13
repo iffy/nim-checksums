@@ -5,7 +5,7 @@ import std/strutils # toHex
 ## down to ~3 helper functions.
 
 when defined(js):
-  import std/assertions
+  when not declared(assert): import std/assertions
 
   type
     # JS target does not do well with 64 bits as integers are always represented

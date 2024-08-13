@@ -3,7 +3,7 @@ targets: "c cpp js"
 """
 
 import checksums/sha3
-import std/assertions
+when not declared(assert): import std/assertions
 
 const testMessage = """
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

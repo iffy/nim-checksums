@@ -4,7 +4,7 @@ discard """
 """
 
 import checksums/md5
-import std/assertions
+when not declared(assert): import std/assertions
 
 proc main() {.raises: [].} =
   doAssert(getMD5("Franz jagt im komplett verwahrlosten Taxi quer durch Bayern") ==
